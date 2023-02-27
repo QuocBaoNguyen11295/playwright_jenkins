@@ -1,0 +1,31 @@
+{
+  "name": "playwright_jenkins",
+  "version": "1.0.0",
+  "description": "E2E testing with Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuocBaoNguyen11295/playwright_jenkins.git"
+  },
+  "keywords": [
+    "ts",
+    "js",
+    "playwright",
+    "e2e",
+    "jenkins"
+  ],
+  "author": "Quoc Bao Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuocBaoNguyen11295/playwright_jenkins/issues"
+  },
+  "homepage": "https://github.com/QuocBaoNguyen11295/playwright_jenkins#readme",
+  "dependencies": {
+    "@playwright/test": "^1.27.1",
+    "dotenv": "^16.0.3",
+    "prettier": "^2.8.4"
+  }
+}
