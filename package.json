@@ -4,7 +4,8 @@
   "description": "E2E testing with Playwright",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test",
+    "jenkins": "java -jar jenkins.war -httpPort=8080 --enable-future-java"
   },
   "repository": {
     "type": "git",
