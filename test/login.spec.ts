@@ -1,5 +1,9 @@
 import {test,expect} from '@playwright/test'
 import {open_index_page} from '../helpers/helper'
+import * as dotenv from 'dotenv'
+dotenv.config({
+    path:'build.env'
+})
 test.describe.parallel('Login feature @login',()=>{
     test.beforeEach(async({page})=>{
         await open_index_page(page)
