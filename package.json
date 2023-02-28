@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
+    "login:line": "playwright test --grep=@login --reporter=line",
+    "login:html": "playwright test --grep=@login --reporter=html",
     "jenkins": "java -jar jenkins.war -httpPort=8080 --enable-future-java"
   },
   "repository": {
