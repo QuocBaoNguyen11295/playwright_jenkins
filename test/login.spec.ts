@@ -20,11 +20,11 @@ test.describe.parallel('Login feature @login',()=>{
         await test.step('Fill out account for login',async()=>{
             const username_field = await page.locator('label:text-is("Login")').locator('..').locator('input')
             await username_field.isEditable()
-            await username_field.fill('username')
+            await username_field.fill(`${process.env.account_username}`)
 
             const password_field = await page.locator('label:text-is("Password")').locator('..').locator('input')
             await password_field.isEditable()
-            await password_field.fill('password')
+            await password_field.fill(`${process.env.account_password}`)
 
             const remember_me_box = await page.locator('label:text-is("Keep me signed in")').locator('..').locator('input')
             await remember_me_box.waitFor({state:"visible"})
@@ -39,7 +39,7 @@ test.describe.parallel('Login feature @login',()=>{
         })
 
         await test.step('Check user logins sucessfully',async()=>{
-            const username_login = await page.locator('#settingsBox').locator('li').locator('a:text("username")')
+            const username_login = await page.locator('#settingsBox').locator('li').locator(`a:text("${process.env.account_username}")`)
             await expect(username_login).toBeVisible()
         })
 
