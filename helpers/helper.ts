@@ -13,3 +13,9 @@ export async function check_open_login_page_successfully(page) {
     const header = await page.locator('h3')
     await expect(header).toHaveText('Log in to ZeroBank')
 }
+
+export async function open_tab_on_index_page(page,tabname) {
+    const tab = await page.locator(`strong:text("${tabname}")`)
+    await tab.waitFor({state: "visible"})
+    await tab.click()
+}
