@@ -11,6 +11,8 @@
     "forgot_password:html":"playwright test --grep=@forgot_password --reporter=html",
     "feedback:line":"playwright test --grep=@feedback --reporter=line",
     "feedback:html":"playwright test --grep=@feedback --reporter=html",
+    "search_keyword:line":"playwright test --grep=@search_keyword --reporter=line",
+    "search_keyword:html":"playwright test --grep=@search_keyword --reporter=html",
     "jenkins": "java -jar jenkins.war -httpPort=8080 --enable-future-java"
   },
   "repository": {
