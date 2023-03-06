@@ -13,6 +13,8 @@
     "feedback:html":"playwright test --grep=@feedback --reporter=html",
     "search_keyword:line":"playwright test --grep=@search_keyword --reporter=line",
     "search_keyword:html":"playwright test --grep=@search_keyword --reporter=html",
+    "pay_saved_payee:line":"playwright test --grep=@pay_saved_payee --reporter=line",
+    "pay_saved_payee:html":"playwright test --grep=@pay_saved_payee --reporter=html",
     "jenkins": "java -jar jenkins.war -httpPort=8080 --enable-future-java"
   },
   "repository": {
