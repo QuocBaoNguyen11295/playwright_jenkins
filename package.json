@@ -15,6 +15,8 @@
     "search_keyword:html":"playwright test --grep=@search_keyword --reporter=html",
     "pay_saved_payee:line":"playwright test --grep=@pay_saved_payee --reporter=line",
     "pay_saved_payee:html":"playwright test --grep=@pay_saved_payee --reporter=html",
+    "add_new_payee:line":"playwright test --grep=@add_new_payee --reporter=line",
+    "add_new_payee:html":"playwright test --grep=@add_new_payee --reporter=html",
     "jenkins": "java -jar jenkins.war -httpPort=8080 --enable-future-java"
   },
   "repository": {
