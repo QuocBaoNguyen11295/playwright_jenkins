@@ -19,6 +19,8 @@
     "add_new_payee:html":"playwright test --grep=@add_new_payee --reporter=html",
     "purchase_foreign_currency:line":"playwright test --grep=@purchase_foreign_currency --reporter=line",
     "purchase_foreign_currency:html":"playwright test --grep=@purchase_foreign_currency --reporter=html",
+    "find_transaction:line":"playwright test --grep=@find_transaction --reporter=line",
+    "find_transaction:html":"playwright test --grep=@find_transaction --reporter=html",
     "jenkins": "java -jar jenkins.war -httpPort=8080 --enable-future-java"
   },
   "repository": {
